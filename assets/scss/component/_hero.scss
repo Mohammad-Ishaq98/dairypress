@@ -1,0 +1,75 @@
+/*----------------------------------------
+    03. hero CSS
+----------------------------------------*/
+@use "../abstract" as *;
+.hero{
+    background: center/cover no-repeat;
+    position: relative;
+    &::after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
+        z-index: -1;
+    }
+}
+.hero_title{
+    position: relative;
+    z-index: 5;
+    padding-top: 210px;
+    padding-bottom: 310px;
+    h5{
+        font-size: 24px;
+        color: var(--clr-common-white);
+        line-height: 1;
+        margin-bottom: 32px;
+        font-weight: $regular;
+        font-family: $jost2;
+        @media #{$lg} {
+            font-size: 14px;
+        }
+    }
+    h1{
+        font-size: 120px;
+        text-transform: uppercase;
+        color: var(--clr-common-white);
+        line-height: .9;
+        font-family: $jost;
+        @media #{$md} {
+            font-size: 60px;
+        }
+    }
+    p{
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 49px;
+        color: #a8a3a3;
+        font-family: $jost2;
+
+        
+    }
+    .hero_btns{
+        a{
+            padding: 25px 35px;
+            color: #404a3d;
+            background: var(--clr-theme-2);
+            font-size: 16px;
+            font-family: $jost2;
+            font-weight: $semiBold;
+            text-transform: uppercase;
+            &:nth-child(2){
+                font-family: $jost2;
+                background:transparent;
+                color: var(--clr-common-white);
+                border: 2px dashed #77665f;
+                margin-left: 30px;
+                padding: 23px 34px;
+                font-size: 16px;
+            }
+        }
+    }
+}

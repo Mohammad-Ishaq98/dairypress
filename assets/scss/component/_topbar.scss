@@ -1,0 +1,57 @@
+/*----------------------------------------
+    01. topbar CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.topbar{
+    position: relative;    
+}
+.top_bar_wrapper{
+    background: var(--clr-theme-1);
+    color: #abb3a9;
+    .topbar_left{
+        margin-left: 298px;
+        .topbar_info{
+            @media #{$lg} {
+                .ml-40 {
+                    margin-left: 0px;
+                }
+            }
+        }
+        span{
+            color: var(--clr-theme-2);
+            i{
+                color: var(--clr-theme-2);
+                display: inline-block;
+                padding: 12px 0;
+            }
+            p{
+                margin-top: 5px;
+                margin-left: 7px;
+                display: inline-block;
+            }
+        }
+    }
+    .topbar_right{
+        margin-right: 20px;
+        .socil_wrapper{
+            a{
+                margin-right: 17px;
+                display: inline-block;
+                padding: 12px 0;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: var(--clr-theme-2);
+                }
+                i{
+                    
+                }
+            }
+        }
+    }
+}
+//logo
+.tem_logo{
+    position: absolute;
+    top: 0;
+}
