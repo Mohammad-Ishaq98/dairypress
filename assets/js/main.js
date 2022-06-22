@@ -59,14 +59,14 @@
 
 	////////////////////////////////////////////////////
 	// Cart Toggle Js
-	// $(".cart-toggle-btn").on("click", function () {
-	// 	$(".cartmini__wrapper").addClass("opened");
-	// 	$(".body-overlay").addClass("opened");
-	// });
-	// $(".cartmini__close-btn").on("click", function () {
-	// 	$(".cartmini__wrapper").removeClass("opened");
-	// 	$(".body-overlay").removeClass("opened");
-	// });
+	$(".cart_wrapper").on("click", function () {
+		$(".cartmini_area").addClass("cartmini_opend");
+		$(".body-overlay").addClass("cartmini_opend");
+	});
+	$(".cartmini_close").on("click", function () {
+		$(".cartmini_area").removeClass("cartmini_opend");
+		$(".body-overlay").removeClass("cartmini_opend");
+	});
 	// $(".body-overlay").on("click", function () {
 	// 	$(".cartmini__wrapper").removeClass("opened");
 	// 	$(".sidebar__area").removeClass("sidebar-opened");
