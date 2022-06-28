@@ -35,8 +35,8 @@
       <div class="topbar">
            <div class="container-fluid">
             <div class="row align-items-center">
-               <div class="top_bar_wrapper d-lg-flex justify-content-between">
-                  <div class="topbar_left d-md-flex align-items-center">
+               <div class="top_bar_wrapper d-flex justify-content-between">
+                  <div class="topbar_left d-flex align-items-center">
                      <span class="topbar_info d-flex">
                         <i class="fas fa-envelope d-inline-block"></i> <p> info@webmail.com</p>
                      </span>
@@ -58,7 +58,7 @@
            </div>
             <!-- tem icon -->
             <div class="tem_logo">
-               <a href="#"><img src="/assets/img/logo/logo.jpg" alt=""></a>
+               <a href="#"><img class="img-fluid" src="assets/img/logo/logo.jpg" alt=""></a>
             </div>
       </div>
       <!-- topbar end -->
@@ -67,9 +67,8 @@
       <header>
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-lg-6">
+               <div class="col-md-6">
                   <div class="main-menu">
-                  <a href="#menu" class="d-lg-none d-block trigger_menu"><i class="fas fa-bars"></i></a>
                      <nav id="menu" class="main_menu">
                         <ul>
                            <li class="has-dropdown">
@@ -114,20 +113,37 @@
                </div>  
             </div>
          </div>
-         <div class="cart_section d-lg-flex">
-            <div class="cart_box">
-               <div class="cart_wrapper"><i class="fas fa-cart-arrow-down"></i></div>
+
+         <!-- mobile menu icon -->
+         <div class="container-fluid">
+            <div class="sidebar_menu_icon d-lg-none">
+               <div class="sidebar_menu_icon_btn" id="sidebar-toggle">
+                  <i class="fal fa-bars"></i>
+               </div>
             </div>
-            <div class="bar-icon">
-               <div class="bar_wrapper">
-                  <img src="assets/img/header/01_home.png" alt="">
+            <!-- cart_section start -->
+            <div class="cart_section d-lg-flex">
+               <div class="cart_box">
+                  <div class="cart_wrapper"><i class="fas fa-cart-arrow-down"></i></div>
+               </div>
+               <div class="bar-icon">
+                  <div class="bar_wrapper">
+                     <img src="assets/img/header/01_home.png" alt="">
+                  </div>
                </div>
             </div>
          </div>
       </header>
       <!-- header end -->
 
-
+      <!-- menu sidebar start -->
+       <div class="menu_side_bar_area d-lg-none d-block">
+         <div class="menu_close_wrapper">
+           <button class="menu_close"> <i class="fal fa-window-close"></i></button>
+         </div>
+         <div class="mobile-menu"></div>
+       </div>
+      <!-- menu sidebar end -->
       <!-- sideabr mini cart start -->
       <div class="cartmini_area">
          <div class="cartmini_wrapper">

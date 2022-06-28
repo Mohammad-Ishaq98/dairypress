@@ -39,12 +39,19 @@
 
 	////////////////////////////////////////////////////
 	// Mobile Menu Js
-	$("#mobile-menu").meanmenu({
+	$("#menu").meanmenu({
 		meanMenuContainer: ".mobile-menu",
 		meanScreenWidth: "991",
 		meanExpand: ['<i class="fal fa-plus"></i>'],
 	});
-
+	$(".sidebar_menu_icon_btn").on("click", function () {
+		$(".menu_side_bar_area").addClass("menu_side_bar_opened");
+		$(".body-overlay").addClass("opend");
+	});
+	$(".menu_close").on("click", function () {
+		$(".menu_side_bar_area").removeClass("menu_side_bar_opened");
+		$(".body-overlay").removeClass("opend");
+	});
 	////////////////////////////////////////////////////
 	//Sidebar Js
 
